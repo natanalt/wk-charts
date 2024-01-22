@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Kanji charts for WaniKani</title>
+
+        <noscript>
+            <style>
+                #app-area {
+                    display: none;
+                }
+                #noscript-warning {
+                    display: block;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Kanji level charts for WaniKani</h1>
+                Generate charts comparing <a href="https://www.wanikani.com">WaniKani</a> levels to kanji recognition
+                for any written text. Perfect tool for analyzing material instead of studying ;)
+            </header>
+
+            <div id="noscript-warning">
+                <b>Note:</b>
+                Your browser must support JavaScript for this website to work, as kanji frequency charts are generated
+                locally.
+            </div>
+            
+            <div id="app-area"></div>
+            <script type="module" src="/src/main.tsx"></script>
+
+            <footer>
+                <p>
+                    Level information extracted from the 
+                    <a href="https://www.wanikani.com/kanji" title="www.wanikani.com">WaniKani website</a>.
+                    <br>
+                    Complete list of kanji sourced from the
+                    <a href="www.edrdg.org/wiki/index.php/KANJIDIC_Project" title="KANJIDIC website">KANJIDIC Project</a>.
+                </p>
+                <p>
+                    Website created by <a href="https://github.com/natanalt" title="My GitHub &lt;3">Natalia Cholewa</a>.
+                    Not affiliated with WaniKani.
+                    <br>
+                    Great thanks to <a href="https://www.tofugu.com" title="www.tofugu.com">Tofugu</a> for creating WaniKani &lt;3
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>

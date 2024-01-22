@@ -1,0 +1,46 @@
+#input-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;	
+}
+
+#input-form-flexbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	--left-ratio: 5;
+	--right-ratio: 2;
+	
+	--left-fraction: calc(var(--left-ratio) / (var(--left-ratio) + var(--right-ratio)));
+	--right-fraction: calc(var(--right-ratio) / (var(--left-ratio) + var(--right-ratio)));
+}
+
+#input-form-left {
+	flex: var(--left-ratio) 0 calc(var(--content-width) * var(--left-fraction));
+}
+
+#input-text {
+	width: 100%;
+	min-height: 200px;
+	resize: vertical;
+	box-sizing: border-box;
+	border-radius: 0px;
+}
+
+#input-form-right {
+	flex: var(--right-ratio) 0 calc(var(--content-width) * var(--right-fraction));
+	background: #eee;
+	display: flex;
+	justify-content: center;
+	flex-direction: column; 
+	align-items: center;
+}
+
+#metric-panel {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}

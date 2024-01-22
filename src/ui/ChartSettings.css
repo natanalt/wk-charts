@@ -1,0 +1,23 @@
+#chart-settings {
+	display: flex;
+	gap: 15px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.chart-setting-panel {
+	display: flex;
+	flex-direction: column;
+	background: #eee;
+	box-sizing: border-box;
+	padding: 10px;
+	max-width: 350px;
+}
+
+.chart-setting-panel > h2 {
+	margin: 0;
+}
+
+#chart-settings label {
+	user-select: none;
+}

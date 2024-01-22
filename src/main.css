@@ -1,0 +1,28 @@
+
+#noscript-warning {
+	display: none;
+}
+
+main {
+	width: 100%;
+	max-width: var(--content-width);
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	--content-width: 1000px;
+}
+
+#app-area {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer {
+	font-size: 0.8em;
+	text-align: center;
+}
